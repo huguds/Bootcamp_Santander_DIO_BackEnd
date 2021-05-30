@@ -8,9 +8,9 @@ server:
 spring:
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:58248/postgres # Endereço para o banco de dados
-    username: postgres  # nome
-    password: 123456  # Senha do postgres criado
+    url: postgres://mxebpxdnaftdag:65cd26914f3908aabbb586b6de2e3cac958a383c6466ba2e91887c873a9e001c@ec2-34-206-8-52.compute-1.amazonaws.com:5432/d8bokgd67pal0f
+    username: mxebpxdnaftdag #nome
+    password: 65cd26914f3908aabbb586b6de2e3cac958a383c6466ba2e91887c873a9e001c #Senha do postgres criado
   jpa:
     show-sql: true
     database-platform: org.hibernate.dialect.PostgreSQLDialect # Dialeto que será utilizado
