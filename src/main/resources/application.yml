@@ -1,0 +1,23 @@
+
+server:
+  port: 8080 # Definir a porta que o server irá utilizar
+  servlet:
+    context-path: /bootcamp #Definir a URL
+
+# É necessário seguir a mesma hierarquia
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:58248/postgres # Endereço para o banco de dados
+    username: postgres  # nome
+    password: 123456  # Senha do postgres criado
+  jpa:
+    show-sql: true
+    database-platform: org.hibernate.dialect.PostgreSQLDialect # Dialeto que será utilizado
+    generate-ddl: true
+    hibernate:
+      ddl-auto: none # Não cria nada automatico
+
+
+application:
+  description: Projeto criado para o bootcamp DIO - Santander
